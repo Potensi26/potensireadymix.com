@@ -1,0 +1,8 @@
+# Perubahan struktur:
+#   /info/terkini/<slug>/        -> /info/<slug>/
+#   /info/jual-readymix/<slug>/  -> /info/<slug>/
+# Wildcard ini otomatis berlaku untuk SEMUA artikel di kedua subsection lama,
+# termasuk artikel baru yang ditambahkan nanti. Tidak perlu di-update manual.
+# (Sudah dicek: tidak ada slug yang bentrok antara kedua subsection ini.)
+/info/terkini/* /info/:splat 301
+/info/jual-readymix/* /info/:splat 301
