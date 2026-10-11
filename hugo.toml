@@ -1,0 +1,244 @@
+baseURL = "https://potensireadymix.com"
+languageCode = "id"
+title = "POTENSI READYMIX | Supplier Beton Cor Readymix dan Sewa Concrete Pump Terpercaya di Bogor"
+theme = "hugo-bangunan"
+summaryLength = 25
+paginate = 6
+
+# Format hak cipta khusus (lihat footer.html) — meniru format situs referensi
+copyright = "2017 - 2030 potensireadymix.com by CV. Potensi Indonesia"
+
+[params]
+  name        = "Potensi Readymix"
+  description = "Supplier Beton Cor Readymix dan Sewa Concrete Pump untuk pengecoran rumah, ruko, jalan, hingga kolam renang"
+  email       = "potensireadymix@gmail.com"
+  phone       = "0812 8267 8939"
+  telepon     = "//+6281282678939"
+  whatsapp    = "//api.whatsapp.com/send?phone=6281282678939&text=*Halo Potensi Readymix*%20%3A"
+  address     = "Jl. Raya Cilebut Jembatan 2 NO. 41, Kota Bogor 16165, Jawa Barat"
+  year        = 2024
+  avatar      = "/images/potensi-avatar.jpg"
+  avatarclass = "circle"
+  background  = "/images/header-PRI.jpg"
+  banner      = "/images/header-PRI.jpg"
+  favicon     = "/images/potensi-favicon.png"
+  logo        = "/images/logo-Potensi-Readymix.png"
+  logoclass   = "icon float-left"
+  DateForm    = "2 January 2006"
+  author      = "Potensi Readymix"
+  tocMinWordCount = 500
+
+  checkoutWa   = "6281282678939"
+  promoEndDate = "2027-12-31T23:59:59"
+
+  showSubheader      = true
+  showServices       = true
+  showRecentWorks    = true
+  enableNextPrevPages = true
+  showFooterContact  = true
+  showFooterTextWidget = true
+  enableWhatApps     = true
+  enableTelepon      = true
+
+  # ─── Schema SEO ───────────────────────────────────────────────────────────
+  # Harga: base_price = minimum, price_max = maksimum (JANGAN pakai price_range)
+  # Mengacu pada harga readymix per m3 (K-225 s/d K-350)
+  base_price = 1200000
+  price_max  = 1450000
+
+  # Rating statis — nilai tetap agar konsisten di setiap build
+  site_rating       = "4.8"
+  site_rating_count = "215"
+  site_rating_best  = "5"
+  site_rating_worst = "1"
+
+  # Lokasi (Cilebut, Kota Bogor)
+  postal_code   = "16165"
+  geo_latitude  = -6.595038
+  geo_longitude = 106.817787
+  opening_hours = "Mo-Sa 08:00-17:00"
+
+  # SKU prefix unik per domain
+  sku_prefix = "PR"
+
+  # Area layanan (radius pengiriman readymix dari batching plant)
+  area_served = ["Bogor", "Depok", "Jakarta", "Tangerang", "Bekasi", "Cibinong", "Sukabumi", "Cianjur", "Karawang"]
+
+  # Keywords SEO
+  keywords = ["beton cor readymix", "harga readymix", "supplier beton cor", "sewa concrete pump", "jasa pengecoran", "beton siap pakai", "readymix bogor"]
+
+  # Produk
+  materials = [
+    "Readymix K-225",
+    "Readymix K-250",
+    "Readymix K-275",
+    "Readymix K-300",
+    "Readymix K-325",
+    "Readymix K-350",
+    "Sewa Concrete Pump"
+  ]
+  categories = ["Beton Cor Readymix", "Sewa Concrete Pump", "Jasa Pengecoran"]
+
+  return_policies = [
+    "Beton yang sudah dituang tidak dapat dikembalikan, namun komplain mutu dapat diajukan dengan menyertakan hasil uji slump/kubus.",
+    "Pengecoran ulang gratis apabila mutu beton terbukti tidak sesuai spesifikasi yang dipesan.",
+    "Laporan uji kuat tekan (testing) tersedia untuk setiap pengiriman sesuai permintaan."
+  ]
+
+  # Layanan
+  service_types = [
+    "Jasa Pengecoran dengan Beton Readymix",
+    "Sewa Concrete Pump Mini dan Standar",
+    "Sewa Concrete Pump Long Boom",
+    "Jasa Pengecoran Kolam Renang dan Jalan"
+  ]
+  cancellation_policies = [
+    "Pembatalan order dapat dilakukan maksimal 1 hari sebelum jadwal pengecoran.",
+    "Penjadwalan ulang gratis apabila lokasi proyek belum siap dicor.",
+    "Dana dikembalikan penuh jika armada batal dikirim akibat kesalahan dari pihak kami."
+  ]
+  service_output = "Pengecoran beton readymix yang presisi, kuat, dan tepat waktu untuk kebutuhan rumah, ruko, jalan, gedung, hingga kolam renang."
+  # ──────────────────────────────────────────────────────────────────────────
+
+  [[params.testimonials]]
+  name     = "{Andrew|Budi|Andi|Joko|Fajar}"
+  avatar   = "/images/admin/avatar1.png"
+  status   = "Online"
+  rating   = 5
+  message  = "{Beton readymix|Cor beton|Pasokan beton} dari {perusahaan|vendor|penyedia} ini {sangat|amat|begitu} {bagus|berkualitas|sesuai mutu} dan {pengirimannya|pengirimannya|armadanya} {tepat waktu|on time|tidak telat}. {Proses|Tahap} {pengecoran|penuangan} juga {sangat|amat} {cepat|lancar|efisien} dan {rapi|teratur|terkontrol}. Kami {sangat|amat} {puas|senang|gembira} dengan {hasilnya|output-nya|hasil corannya}!"
+  response = "Kami {senang|gembira|bahagia} {mendengarnya|mengetahuinya}. {Terima kasih|Kami berterima kasih} atas {kepercayaan|loyalitas|dukungan} {Anda|Bapak/Ibu}."
+
+  [[params.testimonials]]
+  name     = "{Sarah J|Dewi|Siti|Maya|Ayu}"
+  avatar   = "/images/admin/avatar2.png"
+  status   = "Online"
+  rating   = 5
+  message  = "Kualitas {readymix K-300|beton readymix|beton cor} yang kami {beli|pesan|dapatkan} {sangat|amat} {baik|bagus|berkualitas}, {sesuai|cocok|pas} dengan {spesifikasi|standar|mutu} yang kami {butuhkan|perlukan|inginkan}. {Sangat|Benar-benar|Sungguh} {direkomendasikan|disarankan} untuk {proyek|pembangunan} {rumah|ruko|gedung}."
+  response = "Kami {sangat|amat} {senang|gembira} {mendengar|mengetahui} {berita|informasi} ini. {Terima kasih|Kami berterima kasih}."
+
+  [[params.testimonials]]
+  name     = "{Kang Emil|Bambang|Hadi|Rizal|Ahmad}"
+  avatar   = "/images/admin/avatar3.png"
+  status   = "Online"
+  rating   = 4
+  message  = "{Sewa|Pemakaian} {concrete pump|pompa beton} dari Potensi Readymix di {proyek|konstruksi} kami {sangat|amat|begitu} {membantu|bermanfaat} karena {operatornya|sopirnya|tim teknisinya} {berpengalaman|profesional|cekatan}. {Terima kasih|Kami berterima kasih}!"
+  response = "{Terima kasih|Kami berterima kasih} atas {kepercayaan|dukungan|kesetiaan} {Anda|Bapak/Ibu}. Kami {senang|gembira|bahagia} {mendengar|mengetahui} {proyek|pembangunan} Anda {berhasil|sukses|lancar}."
+
+  [[params.testimonials]]
+  name     = "{Sophia L|Rina|Fitri|Nur|Diah}"
+  avatar   = "/images/admin/avatar4.png"
+  status   = "Online"
+  rating   = 4
+  message  = "{Penggunaan|Pemanfaatan} {jasa pengecoran|beton readymix} dari {perusahaan|vendor|penyedia} ini {sangat|amat} {memudahkan|membantu|memperlancar} kami dalam {mengecor|membangun|menyelesaikan} {pelat lantai|jalan|area parkir} untuk {area|zona} {industri|pabrik|komersial}. {Proses|Tahap} {pengiriman|distribusi} juga {tepat waktu|sesuai jadwal|tidak terlambat}."
+  response = "Senang mengetahui bahwa layanan kami bermanfaat bagi Anda. Terima kasih."
+
+  [[params.testimonials]]
+  name     = "{Rina|Lina|Sari|Dewi|Ayu}"
+  avatar   = "/images/admin/avatar5.png"
+  status   = "Online"
+  rating   = 4
+  message  = "{Pengecoran|Pengerjaan} {kolam renang|pelat lantai|jalan} kami {berjalan|terselenggara|dilaksanakan} {lancar|dengan baik|tanpa kendala} dan {hasilnya|output-nya} {sangat|amat} {memuaskan|baik|bagus}. {Tidak ada|Tanpa} {keropos|retak|cacat} {sama sekali|sedikit pun|pada hasil cor}."
+  response = "Kami {sangat|amat} {menghargai|mengapresiasi} {feedback|umpan balik} Anda. {Terima kasih|Kami berterima kasih} telah {mempercayakan|menyerahkan} {proyek|pekerjaan} Anda kepada kami."
+
+  [[params.testimonials]]
+  name     = "{Dadang|Eko|Rio|Galih|Wawan}"
+  avatar   = "/images/admin/avatar6.png"
+  status   = "Online"
+  rating   = 4
+  message  = "{Pasokan|Pengiriman} {beton readymix|beton cor} yang kami {pesan|dapatkan} {sangat|amat} {berkualitas|baik|bagus}. {Armadanya|Truk mixernya|Pengirimannya} {datang tepat waktu|gampang dijadwalkan|praktis} dan {hasil corannya|hasilnya} {rapi|tertata|sesuai harapan}. Kami {sangat|amat} {puas|senang|gembira} dengan {pelayanannya|layanannya|service-nya}."
+  response = "Kami {bangga|senang|gembira} bisa {membantu|mendukung|memfasilitasi} {proyek|pekerjaan} Anda {berjalan|terselenggara} {lancar|dengan baik|sukses}. {Terima kasih|Kami berterima kasih} atas {ulasan|review|feedback} {positif|baik} {Anda|Bapak/Ibu}."
+
+  [[params.promoItems]]
+  name        = "Readymix K-225"
+  normalPrice = "Rp 1.400.000,- /m3"
+  promoPrice  = "Rp 1.350.000,- /m3"
+
+  [[params.promoItems]]
+  name        = "Readymix K-250"
+  normalPrice = "Rp 1.420.000,- /m3"
+  promoPrice  = "Rp 1.370.000,- /m3"
+
+  [[params.promoItems]]
+  name        = "Readymix K-275"
+  normalPrice = "Rp 1.440.000,- /m3"
+  promoPrice  = "Rp 1.390.000,- /m3"
+
+  [[params.promoItems]]
+  name        = "Readymix K-300"
+  normalPrice = "Rp 1.460.000,- /m3"
+  promoPrice  = "Rp 1.410.000,- /m3"
+
+  [[params.promoItems]]
+  name        = "Readymix K-325"
+  normalPrice = "Rp 1.480.000,- /m3"
+  promoPrice  = "Rp 1.430.000,- /m3"
+
+  [[params.promoItems]]
+  name        = "Readymix K-350"
+  normalPrice = "Rp 1.500.000,- /m3"
+  promoPrice  = "Rp 1.450.000,- /m3"
+
+  [[params.promoItems]]
+  name        = "Sewa Pompa Mini (8 jam)"
+  normalPrice = "Rp 4.500.000,-"
+  promoPrice  = "Rp 4.000.000,-"
+
+  [[params.promoItems]]
+  name        = "Sewa Pompa Standar (8 jam)"
+  normalPrice = "Rp 4.500.000,-"
+  promoPrice  = "Rp 4.000.000,-"
+
+  [[params.promoItems]]
+  name        = "Sewa Pompa Kodok (8 jam)"
+  normalPrice = "Rp 9.000.000,-"
+  promoPrice  = "Rp 8.500.000,-"
+
+  [[params.promoItems]]
+  name        = "Sewa Pompa Long Boom (8 jam)"
+  normalPrice = "Rp 9.000.000,-"
+  promoPrice  = "Rp 8.500.000,-"
+
+  [[params.promoItems]]
+  name        = "Sewa Super Long Boom (8 jam)"
+  normalPrice = "Rp 16.000.000,-"
+  promoPrice  = "Rp 15.000.000,-"
+
+  [[params.promoItems]]
+  name        = "Sewa Master Long Boom (8 jam)"
+  normalPrice = "Rp 27.000.000,-"
+  promoPrice  = "Rp 25.000.000,-"
+
+[[menu.main]]
+  name   = "Home"
+  url    = "/"
+  weight = 1
+[[menu.main]]
+  name   = "Harga Readymix"
+  url    = "/readymix/"
+  weight = 2
+[[menu.main]]
+  name   = "Sewa Pompa"
+  url    = "/pompa/"
+  weight = 3
+[[menu.main]]
+  name   = "Informasi"
+  url    = "/info/"
+  weight = 4
+[[menu.main]]
+  name   = "Alat Berat"
+  url    = "/alat-berat/"
+  weight = 5
+[[menu.main]]
+  name   = "Jasa"
+  url    = "/jasa/"
+  weight = 6
+[[menu.main]]
+  name   = "Promo"
+  url    = "/promo/"
+  weight = 7
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 5
+    ordered    = false

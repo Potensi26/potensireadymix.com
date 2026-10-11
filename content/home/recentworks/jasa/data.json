@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "items": [
+            {
+                "name": "Sewa Pompa Mini",
+                "url": "#",
+                "image": "/images/pompa/pompa-mini.jpg",
+                "price": "Rp 4.500.000,- /8jam (NEGO)",
+                "description": "Cocok untuk akses sempit/gang kecil dengan jarak pengecoran pendek."
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "items": [
+            {
+                "name": "Sewa Pompa Standar",
+                "url": "#",
+                "image": "/images/pompa/pompa-standar.jpg",
+                "price": "Rp 4.500.000,- /8jam (NEGO)",
+                "description": "Kapasitas standar untuk pengecoran lantai dasar dan area terbuka."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "items": [
+            {
+                "name": "Sewa Pompa Kodok",
+                "url": "#",
+                "image": "/images/pompa/pompa-kodok.jpg",
+                "price": "Rp 8.500.000,- /8jam (NEGO)",
+                "description": "Boom pendek dengan mobilitas tinggi, cocok untuk area pengecoran sedang."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "items": [
+            {
+                "name": "Sewa Pompa Long Boom",
+                "url": "#",
+                "image": "/images/pompa/super-long.jpg",
+                "price": "Rp 8.500.000,- /8jam (NEGO)",
+                "description": "Jangkauan lebih tinggi dan jauh, cocok untuk gedung bertingkat."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "items": [
+            {
+                "name": "Sewa Super Long Boom",
+                "url": "#",
+                "image": "/images/pompa/master-long.jpg",
+                "price": "Rp 15.000.000,- /8jam (NEGO)",
+                "description": "Jangkauan sangat panjang untuk proyek gedung tinggi dan area luas."
+            }
+        ]
+    }
+]

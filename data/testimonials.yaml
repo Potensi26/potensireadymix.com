@@ -1,0 +1,58 @@
+testimonials:
+  - name: Budi
+    avatar: /images/admin/avatar1.png
+    status: Online
+    rating: 5
+    message: >-
+      Cor beton dari perusahaan ini amat berkualitas dan pengirimannya on time.
+      Tahap penuangan juga sangat lancar dan teratur. Kami sangat senang dengan
+      hasil corannya!
+    response: Kami senang mengetahuinya. Terima kasih atas loyalitas Anda.
+  - name: Siti
+    avatar: /images/admin/avatar2.png
+    status: Online
+    rating: 5
+    message: >-
+      Kualitas beton readymix yang kami beli sangat baik, cocok dengan
+      spesifikasi yang kami perlukan. Sungguh disarankan untuk pembangunan ruko.
+    response: Kami sangat senang mengetahui informasi ini. Kami berterima kasih.
+  - name: Hadi
+    avatar: /images/admin/avatar3.png
+    status: Online
+    rating: 4
+    message: >-
+      Pemakaian concrete pump dari Potensi Readymix di proyek kami amat
+      bermanfaat karena sopirnya profesional. Terima kasih!
+    response: >-
+      Terima kasih atas dukungan Bapak/Ibu. Kami gembira mendengar proyek Anda
+      lancar.
+  - name: Sophia L
+    avatar: /images/admin/avatar4.png
+    status: Online
+    rating: 4
+    message: >-
+      Pemanfaatan beton readymix dari penyedia ini amat memudahkan kami dalam
+      membangun pelat lantai untuk area pabrik. Tahap pengiriman juga sesuai
+      jadwal.
+    response: Senang mengetahui bahwa layanan kami bermanfaat bagi Anda. Terima kasih.
+  - name: Dewi
+    avatar: /images/admin/avatar5.png
+    status: Online
+    rating: 4
+    message: >-
+      Pengerjaan kolam renang kami berjalan dengan baik dan output-nya amat
+      baik. Tidak ada retak pada hasil cor.
+    response: >-
+      Kami amat menghargai feedback Anda. Terima kasih telah menyerahkan proyek
+      Anda kepada kami.
+  - name: Dadang
+    avatar: /images/admin/avatar6.png
+    status: Online
+    rating: 4
+    message: >-
+      Pasokan beton readymix yang kami pesan sangat bagus. Truk mixernya datang
+      tepat waktu dan hasilnya sesuai harapan. Kami sangat gembira dengan
+      layanannya.
+    response: >-
+      Kami senang bisa membantu proyek Anda terselenggara dengan baik. Kami
+      berterima kasih atas ulasan positif Bapak/Ibu.

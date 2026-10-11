@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "items": [
+            {
+                "name": "Readymix K-225",
+                "url": "#",
+                "image": "/images/produk/K225.jpg",
+                "price": "Rp 1.350.000,- /m³",
+                "description": "Mutu beton ringan, umum digunakan untuk lantai rumah, sloof, dan struktur non-struktural."
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "items": [
+            {
+                "name": "Readymix K-250",
+                "url": "#",
+                "image": "/images/produk/K250.jpg",
+                "price": "Rp 1.370.000,- /m³",
+                "description": "Cocok untuk pondasi rumah, kolom ringan, dan pengecoran area komersial kecil."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "items": [
+            {
+                "name": "Readymix K-275",
+                "url": "#",
+                "image": "/images/produk/K275.jpg",
+                "price": "Rp 1.390.000,- /m³",
+                "description": "Mutu menengah untuk struktur ruko, gudang, dan bangunan dua lantai."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "items": [
+            {
+                "name": "Readymix K-300",
+                "url": "#",
+                "image": "/images/produk/K300.jpg",
+                "price": "Rp 1.410.000,- /m³",
+                "description": "Umum dipakai untuk struktur gedung bertingkat rendah dan jalan lingkungan."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "items": [
+            {
+                "name": "Readymix K-325",
+                "url": "#",
+                "image": "/images/produk/K325.jpg",
+                "price": "Rp 1.430.000,- /m³",
+                "description": "Untuk struktur jalan beton dan jembatan kecil yang membutuhkan mutu lebih tinggi."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "items": [
+            {
+                "name": "Readymix K-350",
+                "url": "#",
+                "image": "/images/produk/K350.jpg",
+                "price": "Rp 1.450.000,- /m³",
+                "description": "Mutu tinggi untuk struktur berat, jalan beton, dan proyek infrastruktur."
+            }
+        ]
+    }
+]

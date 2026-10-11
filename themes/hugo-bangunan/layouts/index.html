@@ -1,0 +1,66 @@
+{{ define "main"}}
+  <main id="main">
+    <div class="container">
+      {{ if .Site.Params.showSubheader }}
+        {{ partial "home/subheader.html" . }}
+      {{ end }}
+
+      {{/* Cari semua section di seluruh content (berapapun kedalaman foldernya)
+           lalu saring berdasarkan Type. Ini supaya struktur seperti
+           content/home/recentworks/produk/_index.md dan
+           content/home/recentworks/jasa/_index.md tetap terdeteksi,
+           walau dibungkus folder "recentworks" yang tidak punya Type sendiri. */}}
+      {{ $allowedTypes := slice "single" }}
+      {{ if .Site.Params.showServices }}
+        {{ $allowedTypes = $allowedTypes | append "service" }}
+      {{ end }}
+      {{ if .Site.Params.showRecentWorks }}
+        {{ $allowedTypes = $allowedTypes | append "recentwork" }}
+      {{ end }}
+      {{ $allSections := where .Site.Pages "Kind" "section" }}
+      {{ $featured := where $allSections "Type" "in" $allowedTypes }}
+
+      {{ range $featured.ByWeight }}
+        {{ $stype := .Type }}
+        <div class="row section featured topspace">
+          <div class="container">
+            <h2 class="section-title">
+              <span>{{ .Title }}</span>
+            </h2>
+            {{ if eq $stype "recentwork" }}
+              {{ partial "home/recentworks.html" . }}
+            {{ else if eq $stype "single" }}
+              {{ partial "home/single.html" . }}
+            {{ end }}
+          </div>
+        </div>  <!-- /section -->
+      {{ end }}
+      <section class="row section featured topspace">
+        <div class="container">
+          <h2 class="section-title"><span>Apa Kata Klien Kami</span></h2>
+          <div class="testimonial-slider">
+            {{ range .Site.Data.testimonials.testimonials }}
+              <div class="whatsapp-chat">
+                <div class="chat-header">
+                  <img src="{{ .avatar }}" alt="{{ .name }} Avatar" class="avatar">
+                  <div class="chat-info">
+                    <h3>{{ .name }}</h3>
+                    <p>{{ .status }}</p>
+                  </div>
+                </div>
+                <div class="chat-body">
+                  <div class="message">
+                    <p>{{ .message }}</p>
+                  </div>
+                  <div class="respond">
+                    <p>{{ .response }}</p>
+                  </div>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    </div>  <!-- /container -->
+  </main>
+{{ end }}
