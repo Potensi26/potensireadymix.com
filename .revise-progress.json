@@ -1,0 +1,26 @@
+{
+  "revised": [
+    "/alat-berat/beko-excavator/",
+    "/alat-berat/harga-wheel-loader/",
+    "/alat-berat/jual-alat-berat-beko-wheel-loader/",
+    "/alat-berat/jual-alat-berat/",
+    "/alat-berat/jual-excavator-baru/",
+    "/alat-berat/jual-excavator-sumitomo-sh75/",
+    "/alat-berat/jual-excavator-terbaru/",
+    "/alat-berat/jual-excavator/",
+    "/alat-berat/jual-wheel-loader-baru/",
+    "/beton/harga-beton-cor-adhimix-di-ancol-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-angke-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-babelan-bekasi/",
+    "/beton/harga-beton-cor-adhimix-di-bedahan-depok/",
+    "/beton/harga-beton-cor-adhimix-di-beji-depok/",
+    "/beton/harga-beton-cor-adhimix-di-bintaro-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-bojong-pondok-terong-depok/",
+    "/beton/harga-beton-cor-adhimix-di-bungur-jakarta/"
+  ],
+  "failed": {
+    "/alat-berat/excavator-sumitomo/": 1,
+    "/alat-berat/jual-wheel-loader/": 1,
+    "/beton/harga-beton-cor-adhimix-di-batutulis-bogor/": 1
+  }
+}
