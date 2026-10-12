@@ -375,6 +375,10 @@ function validateFinalContent(original, revisedContent, location) {
   if (brandRe.test(original) && !brandRe.test(revisedContent)) {
     issues.push(`The brand name "${CONFIG.BRAND}" is missing in the revised output`);
   }
+  // Sapaan khas situs: kalau artikel asli memakai "Sahabat Potensi", revisi wajib mempertahankannya.
+  if (/Sahabat Potensi/.test(original) && !/Sahabat Potensi/.test(revisedContent)) {
+    issues.push('The greeting "Sahabat Potensi" is missing in the revised output');
+  }
   return issues;
 }
 

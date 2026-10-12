@@ -368,7 +368,12 @@ function updateFirstSeenMap(keywordItems) {
   let changed = false;
   for (const item of keywordItems) {
     const key = item.keyword.toLowerCase().trim();
-    if (!map[key]) { map[key] = today; changed = true; }
+    if (!map[key]) {
+      // A normalized keyword inherits the EARLIEST first-seen date of the raw queries merged into it,
+      // so "oldest keyword first" ordering is not reset by normalization.
+      const rawDates = (item.raws || []).map(r => map[r.toLowerCase().trim()]).filter(Boolean).sort();
+      map[key] = rawDates[0] || today; changed = true;
+    }
   }
   if (changed) fs.writeFileSync(KEYWORD_FIRST_SEEN_FILE, JSON.stringify(map, null, 2));
   return map;
@@ -380,7 +385,7 @@ async function fetchKeywordsFromGSC() {
       console.log(`   ⚠️  --keyword="${CUSTOM_KW}" has < 3 significant words — normally skipped, proceeding anyway since this is an explicit manual --dry-run override.`);
     }
     const kws = CUSTOM_KW
-      ? [{ keyword: CUSTOM_KW, impressions: 50, clicks: 1, ctr: 0.02, position: 9 }]
+      ? normalizeAndMergeKeywords([{ keyword: CUSTOM_KW, impressions: 50, clicks: 1, ctr: 0.02, position: 9 }])
       : CONFIG.DRY_RUN_KEYWORDS;
     console.log(`🧪 DRY-RUN: Using ${kws.length} dummy keywords.`);
     return kws;
@@ -416,10 +421,13 @@ async function fetchKeywordsFromGSC() {
 
   // Record first-seen dates for anything new, so "oldest keyword first" ordering below
   // (in main()) has data to work with even for keywords discovered just now.
-  updateFirstSeenMap(filtered);
+  // Connector words at keyword edges are skipped and near-identical queries merged
+  // ("beton site mix adalah" + "beton site mix" -> "beton site mix").
+  const cleaned = normalizeAndMergeKeywords(filtered);
+  updateFirstSeenMap(cleaned);
 
-  console.log(`✅ ${filtered.length} potential keywords from ${rows.length} total.`);
-  return filtered;
+  console.log(`✅ ${cleaned.length} potential keywords from ${rows.length} total.`);
+  return cleaned;
 }
 
 function toSlug(kw) {
@@ -477,6 +485,50 @@ function countSignificantWords(text) {
 
 function hasMinKeywordWords(text, min = 3) {
   return countSignificantWords(text) >= min;
+}
+
+// ─── Keyword normalization: connector words at the EDGES are skipped ───────────────────
+// Kata sambung/penghubung (adalah, ialah, yaitu, itu, dan, yang, di, ke, dari, untuk, dengan, ...)
+// yang menempel di AWAL atau AKHIR keyword dibuang, sehingga "beton site mix adalah" dan
+// "beton site mix" dianggap SATU keyword yang sama (bukan dua artikel hampir kembar), dan
+// potongan keyword seperti "cor jalan dan" menjadi "cor jalan". Kata sambung di TENGAH keyword
+// ("cara membuat beton dan semen") dibiarkan karena bagian dari frasa.
+// Kata tanya "apa"/"apakah" dan "bisa"/"dapat" sengaja TIDAK dibuang (membawa maksud pencarian).
+const EDGE_CONNECTORS = new Set(
+  [...CONJUNCTION_STOPWORDS].filter(w => !['apa', 'apakah', 'bisa', 'dapat'].includes(w))
+);
+
+function normalizeKeyword(text) {
+  const words = String(text || '').trim().replace(/\s+/g, ' ').split(' ').filter(Boolean);
+  while (words.length && EDGE_CONNECTORS.has(words[0].toLowerCase())) words.shift();
+  while (words.length && EDGE_CONNECTORS.has(words[words.length - 1].toLowerCase())) words.pop();
+  return words.join(' ');
+}
+
+// Normalizes every keyword item and merges items that become identical (case-insensitive).
+// `raws` keeps the ORIGINAL strings so keywords.txt can still remove the exact lines it used.
+function normalizeAndMergeKeywords(items) {
+  const merged = new Map();
+  for (const item of items) {
+    const kw = normalizeKeyword(item.keyword);
+    if (!kw) continue;
+    const key = kw.toLowerCase();
+    const raws = item.raws || [item.keyword];
+    if (!merged.has(key)) {
+      merged.set(key, { ...item, keyword: kw, raws: [...raws] });
+      continue;
+    }
+    const m = merged.get(key);
+    m.impressions = (m.impressions || 0) + (item.impressions || 0);
+    m.clicks      = (m.clicks || 0) + (item.clicks || 0);
+    m.ctr         = m.impressions ? m.clicks / m.impressions : 0;
+    m.position    = (m.position && item.position) ? Math.min(m.position, item.position) : (m.position || item.position || 0);
+    raws.forEach(r => { if (!m.raws.includes(r)) m.raws.push(r); });
+  }
+  const out = [...merged.values()];
+  const changed = out.filter(m => m.raws.some(r => r.trim().toLowerCase() !== m.keyword.toLowerCase())).length;
+  if (changed) console.log(`   ✂️  ${changed} keyword(s) cleaned of leading/trailing connector words (adalah, yaitu, dan, yang, di, ...) / merged with duplicates.`);
+  return out;
 }
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -589,9 +641,11 @@ function getKeywordsFromFile() {
     console.log(`   ⏭️  ${tooShort.length} keyword(s) in keywords.txt skipped (< 3 significant words, left in file for review): ${tooShort.slice(0, 5).join(', ')}${tooShort.length > 5 ? ', ...' : ''}`);
   }
 
-  return allLines
-    .filter(kw => hasMinKeywordWords(kw, 3))
-    .map(kw => ({ keyword: kw, impressions: 0, clicks: 0, ctr: 0, position: 0 }));
+  return normalizeAndMergeKeywords(
+    allLines
+      .filter(kw => hasMinKeywordWords(kw, 3))
+      .map(kw => ({ keyword: kw, impressions: 0, clicks: 0, ctr: 0, position: 0 }))
+  );
 }
 
 function removeProcessedKeywordsFromFile(processedKeywords) {
@@ -706,9 +760,11 @@ async function fetchKeywordIdeasFromSerper(seedKeywords) {
     }
   }
 
-  const results = [...ideas]
-    .filter(kw => hasMinKeywordWords(kw, 3)) // same rule as GSC: ≥3 significant words, conjunctions excluded
-    .map(kw => ({ keyword: kw, impressions: 0, clicks: 0, ctr: 0, position: 0 }));
+  const results = normalizeAndMergeKeywords(
+    [...ideas]
+      .filter(kw => hasMinKeywordWords(kw, 3)) // same rule as GSC: ≥3 significant words, conjunctions excluded
+      .map(kw => ({ keyword: kw, impressions: 0, clicks: 0, ctr: 0, position: 0 }))
+  );
 
   console.log(`✅ ${results.length} new keyword idea(s) from Serper.dev (${creditsUsed} credit(s) used this run).`);
   return results;
@@ -1254,6 +1310,8 @@ function parseAndSave(raw, keyword, slug, imagePath, relatedCandidates = []) {
   body = ensureSiteOpening(body, title);
 
   body = body.replace(/IMAGE_PLACEHOLDER/g, imagePath);
+  // The AI sometimes writes "/IMAGE_PLACEHOLDER" -> "//images/..." (protocol-relative URL = broken image).
+  body = body.replace(/\]\(\/{2,}(images\/)/g, '](/$1');
 
   if (!body.includes('![')) {
     const paraEnd = body.indexOf('\n\n');
@@ -1428,6 +1486,12 @@ function validateArticle(filePath) {
   // was written — this is just a visibility check in case that logic is ever bypassed.
   const internalLinkCount = (bodyOnly.match(/(?<!!)\[[^\]]+\]\(\/[^)\s]+\/\)/g) || []).length;
   if (internalLinkCount > 2) issues.push(`❌ ${internalLinkCount} internal link ditemukan (maksimal 2) — periksa enforceInternalLinks()`);
+
+  // Sapaan khas situs: "Sahabat Potensi" harus muncul (peringatan lunak, bukan penolakan).
+  const sahabatCount = (bodyOnly.match(/Sahabat Potensi/g) || []).length;
+  if (sahabatCount === 0) issues.push('⚠️  Sapaan "Sahabat Potensi" tidak ditemukan di artikel.');
+  if (sahabatCount > 3)   issues.push(`⚠️  Sapaan "Sahabat Potensi" muncul ${sahabatCount}x (maksimal 3x) — terasa berlebihan.`);
+  if (/\]\(\/\/[^)]*\)/.test(bodyOnly)) issues.push('❌ Ada URL gambar/link diawali "//" (rusak) — periksa manual.');
 
   const INFORMAL_WORDS = ['nggak', 'ngga', 'gimana', 'yuk', 'nah', 'lho', 'nih', 'banget', 'kayak', 'gitu', 'aja'];
   const foundInformal = INFORMAL_WORDS.filter(w => new RegExp(`\\b${w}\\b`, 'i').test(bodyOnly));
@@ -1635,7 +1699,20 @@ async function main() {
     });
   }
 
-  const toProcess = uniqueKeywords.slice(0, IS_DRY_RUN ? uniqueKeywords.length : CONFIG.MAX_ARTICLES);
+  // Pick up to MAX_ARTICLES, but never two keywords that are near-duplicates OF EACH OTHER in the
+  // same run (filterOutSimilarKeywords only compares against already-published articles, so
+  // e.g. "beton site mix" and "beton site mix adalah" used to both pass and became twin articles).
+  const batchLimit = IS_DRY_RUN ? Infinity : CONFIG.MAX_ARTICLES;
+  const toProcess = [];
+  for (const cand of uniqueKeywords) {
+    if (toProcess.length >= batchLimit) break;
+    const twin = findSimilarExisting(cand.keyword, toProcess.map(k => ({ keyword: k.keyword, title: k.keyword, file: '' })));
+    if (twin) {
+      console.log(`   ⏭️  Skipping "${cand.keyword}" this run — too similar to "${twin.keyword}" which is generated in the same batch.`);
+      continue;
+    }
+    toProcess.push(cand);
+  }
   console.log(`\n📝 Will generate ${toProcess.length} articles (source: ${sourceLabel}):\n`);
 
   // Built ONCE per run and reused for every keyword below — scans content/{category}/*.md
@@ -1685,7 +1762,7 @@ async function main() {
   });
 
   if (sourceLabel === 'keywords.txt') {
-    removeProcessedKeywordsFromFile(toProcess.map(k => k.keyword));
+    removeProcessedKeywordsFromFile(toProcess.flatMap(k => k.raws || [k.keyword]));
     console.log(`\n📄 ${toProcess.length} keywords removed from keywords.txt (processed).`);
   }
   // Note: sourceLabel === 'Serper' doesn't need a removal step — those keywords were
