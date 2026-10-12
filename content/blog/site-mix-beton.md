@@ -12,7 +12,7 @@ toc: true
 draft: false
 ---
 
-**Site Mix Beton: Keunggulan, Aplikasi, dan Perbandingan dengan Readymix** – Lebih dari 60% proyek konstruksi skala kecil hingga menengah di Indonesia masih mengandalkan *site mix* beton sebagai solusi utamanya. Hal ini disebabkan oleh fleksibilitas, potensi penghematan biaya, dan kemudahan aplikasi yang ditawarkan metode ini. Namun, penting bagi Anda untuk memahami secara komprehensif mengenai *site mix* beton, termasuk kelebihan dan kekurangannya, agar dapat mengoptimalkan penggunaannya dalam proyek Anda.
+**Site Mix Beton: Keunggulan, Aplikasi, dan Perbandingan dengan Readymix** – Sahabat Potensi, lebih dari 60% proyek konstruksi skala kecil hingga menengah di Indonesia masih mengandalkan *site mix* beton sebagai solusi utamanya. Hal ini disebabkan oleh fleksibilitas, potensi penghematan biaya, dan kemudahan aplikasi yang ditawarkan metode ini. Namun, penting bagi Anda untuk memahami secara komprehensif mengenai *site mix* beton, termasuk kelebihan dan kekurangannya, agar dapat mengoptimalkan penggunaannya dalam proyek Anda.
 
 ## Apa Itu Site Mix Beton dan Bagaimana Prosesnya?
 
