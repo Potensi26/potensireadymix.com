@@ -18,7 +18,11 @@
     "revise": "node tools/revise-articles.js --dry-run --limit=3",
     "find-orphans": "node tools/find-orphans.js",
     "fix-orphans": "node tools/fix-orphans.js --dry-run --limit=3",
-    "patch-config": "node tools/patch-config.js"
+    "patch-config": "node tools/patch-config.js",
+    "indexnow": "node tools/ping-indexnow.js",
+    "indexnow:dry": "node tools/ping-indexnow.js --dry-run",
+    "fix-greeting": "node tools/fix-greeting.js",
+    "fix-greeting:apply": "node tools/fix-greeting.js --apply"
   },
   "keywords": [],
   "author": "",

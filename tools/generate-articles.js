@@ -49,6 +49,9 @@ const {
 // trusted directly.
 const { renderSafeTables, hasLeftoverTableMarkers } = require('./lib/safe-table.js');
 
+// Guarantees the site greeting "Sahabat Potensi" in the FIRST paragraph — see lib/greeting.js.
+const { ensureGreetingInOpening, greetingInFirstParagraph } = require('./lib/greeting.js');
+
 function renderTemplate(str, vars) {
   return str.replace(/\{\{(\w+)\}\}/g, (_, key) => (key in vars ? vars[key] : `{{${key}}}`));
 }
@@ -1308,6 +1311,11 @@ function parseAndSave(raw, keyword, slug, imagePath, relatedCandidates = []) {
   if (!body.trim()) body = raw;
   body = stripTrailingMarkers(body);
   body = ensureSiteOpening(body, title);
+  // Deterministic safety net: the model sometimes forgets the greeting in the first paragraph.
+  {
+    const g = ensureGreetingInOpening(body);
+    if (g.changed) { body = g.body; console.log('   👋 Sapaan "Sahabat Potensi" ditambahkan otomatis ke paragraf pertama.'); }
+  }
 
   body = body.replace(/IMAGE_PLACEHOLDER/g, imagePath);
   // The AI sometimes writes "/IMAGE_PLACEHOLDER" -> "//images/..." (protocol-relative URL = broken image).
@@ -1487,6 +1495,7 @@ function validateArticle(filePath) {
   const internalLinkCount = (bodyOnly.match(/(?<!!)\[[^\]]+\]\(\/[^)\s]+\/\)/g) || []).length;
   if (internalLinkCount > 2) issues.push(`❌ ${internalLinkCount} internal link ditemukan (maksimal 2) — periksa enforceInternalLinks()`);
 
+  if (!greetingInFirstParagraph(bodyOnly)) issues.push('⚠️  Sapaan "Sahabat Potensi" tidak ada di PARAGRAF PERTAMA.');
   // Sapaan khas situs: "Sahabat Potensi" harus muncul (peringatan lunak, bukan penolakan).
   const sahabatCount = (bodyOnly.match(/Sahabat Potensi/g) || []).length;
   if (sahabatCount === 0) issues.push('⚠️  Sapaan "Sahabat Potensi" tidak ditemukan di artikel.');

@@ -1,0 +1,88 @@
+name: IndexNow Ping
+
+# Mengirim URL artikel yang baru/berubah ke IndexNow (Bing, Yandex, Seznam, Naver) SETELAH situs
+# ter-deploy. Google tidak mendukung IndexNow — untuk Google yang bekerja adalah sitemap.xml dengan
+# <lastmod> akurat (otomatis dari Hugo) + pengiriman ulang sitemap lewat Search Console (opsional,
+# butuh GSC_CREDENTIALS dengan izin "Full").
+#
+# Pemicu:
+#   1. workflow_run — otomatis begitu "Deploy Site" atau "Recycle Old Posts" selesai sukses.
+#   2. schedule     — cadangan harian, kalau pemicu di atas terlewat atau ada antrean URL tersisa
+#                     (dibatasi 500 URL per run).
+#   3. workflow_dispatch — manual.
+# Skrip tools/ping-indexnow.js sendiri yang menentukan URL mana yang perlu dikirim (berdasarkan
+# .indexnow-submitted.json), jadi menjalankannya berkali-kali aman (idempoten).
+
+on:
+  workflow_run:
+    workflows: ["Deploy Site", "Recycle Old Posts"]
+    types: [completed]
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ping:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Tanpa `npm ci` — ping-indexnow.js hanya memakai modul bawaan Node.
+      - name: Submit changed URLs to IndexNow
+        env:
+          GSC_CREDENTIALS: ${{ secrets.GSC_CREDENTIALS }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: node tools/ping-indexnow.js --limit=500
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Commit ping state
+        run: |
+          [ -f .indexnow-submitted.json ] && git add .indexnow-submitted.json
+          [ -f .indexnow-key.json ] && git add .indexnow-key.json
+          KEYFILE="static/$(node -p "require('./.indexnow-key.json').key").txt"
+          [ -f "$KEYFILE" ] && git add "$KEYFILE"
+
+          if git diff --staged --quiet; then
+            echo "ℹ️  Tidak ada perubahan catatan ping — selesai."
+            exit 0
+          fi
+
+          git commit -m "Catat URL yang sudah dikirim ke IndexNow"
+
+          for i in 1 2 3 4 5; do
+            if git push origin master; then
+              echo "✅ Push berhasil (percobaan $i)."
+              exit 0
+            fi
+            if [ "$i" -eq 5 ]; then
+              echo "❌ Push gagal 5x — cek manual." >&2
+              exit 1
+            fi
+            wait_s=$(( (RANDOM % 10) + 5 ))
+            echo "⏳ Push ditolak, rebase & coba lagi dalam ${wait_s}s... (percobaan $i/5)"
+            sleep "$wait_s"
+            git fetch origin master
+            git rebase -X theirs origin/master
+          done

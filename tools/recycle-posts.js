@@ -3,12 +3,9 @@ const path = require('path');
 const matter = require('gray-matter');
 const { execSync } = require('child_process');
 
-// Working URL-notification logic (IndexNow) — replaces the old axios-based pingSearchEngines(),
-// which pinged endpoints that are retired or were never real search-engine endpoints.
-// See tools/lib/index-ping.js for the full explanation.
-const { submitToIndexNow } = require('./lib/index-ping.js');
+// Pemberitahuan IndexNow TIDAK dilakukan di sini (situs belum ter-deploy saat skrip ini jalan).
+// Setelah deploy, workflow indexnow.yml menjalankan tools/ping-indexnow.js yang membaca `lastmod` baru.
 
-const SITE_URL = 'https://potensireadymix.com/';
 
 const contentDir = path.join(__dirname, '..', 'content');
 const now = new Date();
@@ -92,17 +89,13 @@ for (const filePath of markdownFiles) {
   }
 }
 
-// Async IIFE (CommonJS has no top-level await) so the script WAITS for the IndexNow submission
-// to finish before exiting.
 (async () => {
   if (updatedCount > 0) {
     console.log(`${updatedCount} article(s) updated.`);
     // Rebuild the Hugo site
     execSync('hugo', { stdio: 'inherit' });
 
-    // IndexNow wants the SPECIFIC pages that changed, not the sitemap URL.
-    const updatedUrls = updatedFilePaths.map(fp => `${SITE_URL.replace(/\/$/, '')}${toUrl(fp)}`);
-    await submitToIndexNow(SITE_URL, updatedUrls);
+    // Deploy + IndexNow ditangani workflow berikutnya (indexnow.yml membaca lastmod yang baru dinaikkan).
   } else {
     console.log('There are no articles that need to be updated.');
   }
