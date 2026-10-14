@@ -40,7 +40,14 @@
     "/beton/harga-beton-cor-adhimix-di-duren-mekar-depok/",
     "/beton/harga-beton-cor-adhimix-di-genteng-bogor/",
     "/beton/harga-beton-cor-adhimix-di-gondangdia-jakarta/",
-    "/beton/harga-beton-cor-adhimix-di-grogol-jakarta/"
+    "/beton/harga-beton-cor-adhimix-di-grogol-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-cisalak-pasar-depok/",
+    "/beton/harga-beton-cor-adhimix-di-curug-depok/",
+    "/beton/harga-beton-cor-adhimix-di-grogol-depok/",
+    "/beton/harga-beton-cor-adhimix-di-harjasari-bogor/",
+    "/beton/harga-beton-cor-adhimix-di-jatiasih-bekasi/",
+    "/beton/harga-beton-cor-adhimix-di-jatijajar-depok/",
+    "/beton/harga-beton-cor-adhimix-di-jatisampurna-bekasi/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -53,8 +60,9 @@
     "/beton/harga-beton-cor-adhimix-di-cinangka-depok/": 1,
     "/beton/harga-beton-cor-adhimix-di-cisalak-pasar-depok/": 1,
     "/beton/harga-beton-cor-adhimix-di-curug-depok/": 1,
-    "/beton/harga-beton-cor-adhimix-di-duren-tiga-jakarta/": 1,
-    "/beton/harga-beton-cor-adhimix-di-duri-kepa-jakarta/": 1,
-    "/beton/harga-beton-cor-adhimix-di-grogol-depok/": 1
+    "/beton/harga-beton-cor-adhimix-di-duren-tiga-jakarta/": 2,
+    "/beton/harga-beton-cor-adhimix-di-duri-kepa-jakarta/": 2,
+    "/beton/harga-beton-cor-adhimix-di-grogol-depok/": 1,
+    "/beton/harga-beton-cor-adhimix-di-jatimulya-depok/": 1
   }
 }
