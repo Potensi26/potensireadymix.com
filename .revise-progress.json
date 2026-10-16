@@ -62,7 +62,22 @@
     "/beton/harga-beton-cor-adhimix-di-kencana-bogor/",
     "/beton/harga-beton-cor-adhimix-di-klari-karawang/",
     "/beton/harga-beton-cor-adhimix-di-kota-sukabumi/",
-    "/beton/harga-beton-cor-adhimix-di-kukusan-depok/"
+    "/beton/harga-beton-cor-adhimix-di-kukusan-depok/",
+    "/beton/harga-beton-cor-adhimix-di-kab-cirebon/",
+    "/beton/harga-beton-cor-adhimix-di-kamal-muara-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-kapuk-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-kota-cirebon/",
+    "/beton/harga-beton-cor-adhimix-di-kwitang-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-lemahabang-karawang/",
+    "/beton/harga-beton-cor-adhimix-di-limo-depok/",
+    "/beton/harga-beton-cor-adhimix-di-mangga-dua-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-maniis-purwakarta/",
+    "/beton/harga-beton-cor-adhimix-di-margajaya-bogor/",
+    "/beton/harga-beton-cor-adhimix-di-medan-satria-bekasi/",
+    "/beton/harga-beton-cor-adhimix-di-menteng-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-pamoyanan-bogor/",
+    "/beton/harga-beton-cor-adhimix-di-pangkalan-jati-depok/",
+    "/beton/harga-beton-cor-adhimix-di-pangkalan-karawang/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -82,7 +97,11 @@
     "/beton/harga-beton-cor-adhimix-di-kab-cirebon/": 1,
     "/beton/harga-beton-cor-adhimix-di-kamal-muara-jakarta/": 1,
     "/beton/harga-beton-cor-adhimix-di-kapuk-jakarta/": 1,
-    "/beton/harga-beton-cor-adhimix-di-katulampa-bogor/": 1,
-    "/beton/harga-beton-cor-adhimix-di-kota-cirebon/": 1
+    "/beton/harga-beton-cor-adhimix-di-katulampa-bogor/": 2,
+    "/beton/harga-beton-cor-adhimix-di-kota-cirebon/": 1,
+    "/beton/harga-beton-cor-adhimix-di-loji-bogor/": 1,
+    "/beton/harga-beton-cor-adhimix-di-lubang-buaya-jakarta/": 1,
+    "/beton/harga-beton-cor-adhimix-di-mekarsari-depok/": 1,
+    "/beton/harga-beton-cor-adhimix-di-pancoran-mas-depok/": 1
   }
 }
