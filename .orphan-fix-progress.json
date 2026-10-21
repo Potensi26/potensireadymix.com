@@ -2,15 +2,18 @@
   "fixed": [
     "/armada/harga-truk-mixer-beton/",
     "/beton/harga-beton-cor-adhimix-di-babelan-bekasi/",
-    "/beton/harga-beton-cor-adhimix-di-bintaro-jakarta/"
+    "/beton/harga-beton-cor-adhimix-di-bintaro-jakarta/",
+    "/beton/harga-beton-cor-adhimix-di-bungursari-purwakarta/"
   ],
   "failed": {
-    "/alat-berat/excavator-sumitomo/": 1,
-    "/alat-berat/harga-alat-berat/": 1,
-    "/alat-berat/harga-wheel-loader/": 1,
-    "/alat-berat/jual-alat-berat/": 1,
-    "/alat-berat/jual-excavator-sumitomo-sh75/": 1,
-    "/alat-berat/jual-wheel-loader-baru/": 1,
-    "/armada/readymix-k225-depok/": 1
+    "/alat-berat/excavator-sumitomo/": 2,
+    "/alat-berat/harga-alat-berat/": 2,
+    "/alat-berat/harga-wheel-loader/": 2,
+    "/alat-berat/jual-alat-berat/": 2,
+    "/alat-berat/jual-excavator-sumitomo-sh75/": 2,
+    "/alat-berat/jual-wheel-loader-baru/": 2,
+    "/armada/readymix-k225-depok/": 2,
+    "/beton/harga-beton-cor-adhimix-di-bojong-pondok-terong-depok/": 1,
+    "/beton/harga-beton-cor-adhimix-di-bungur-jakarta/": 1
   }
 }
