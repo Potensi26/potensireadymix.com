@@ -130,7 +130,22 @@
     "/beton/harga-beton-cor-merah-putih-di-cimpaeun-depok/",
     "/beton/harga-beton-cor-merah-putih-di-cinangka-depok/",
     "/beton/harga-beton-cor-merah-putih-di-cipaku-bogor/",
-    "/beton/harga-beton-cor-merah-putih-di-dukuh-jakarta/"
+    "/beton/harga-beton-cor-merah-putih-di-dukuh-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-cibadak-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-cibitung-bekasi/",
+    "/beton/harga-beton-cor-merah-putih-di-cibuluh-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-cilodong-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-cipayung-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-cipulir-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-duren-seribu-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-duri-kepa-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-genteng-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-grogol-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-halim-perdana-kusumah/",
+    "/beton/harga-beton-cor-merah-putih-di-jatijajar-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-jatiluhur-purwakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-jelambar-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-kab-bandung/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -165,9 +180,13 @@
     "/beton/harga-beton-cor-merah-putih-di-cibadak-bogor/": 1,
     "/beton/harga-beton-cor-merah-putih-di-cibitung-bekasi/": 1,
     "/beton/harga-beton-cor-merah-putih-di-cibuluh-bogor/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-cilendek-bogor/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-cilendek-bogor/": 2,
     "/beton/harga-beton-cor-merah-putih-di-cilodong-depok/": 1,
     "/beton/harga-beton-cor-merah-putih-di-cipayung-jakarta/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-cipulir-jakarta/": 1
+    "/beton/harga-beton-cor-merah-putih-di-cipulir-jakarta/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-gandul-depok/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-jatisampurna-bekasi/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-jembatan-lima-jakarta/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-kab-garut/": 1
   }
 }
