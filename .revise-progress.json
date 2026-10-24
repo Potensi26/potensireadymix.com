@@ -156,7 +156,16 @@
     "/beton/harga-beton-cor-merah-putih-di-lawang-gintung-bogor/",
     "/beton/harga-beton-cor-merah-putih-di-mangga-dua-jakarta/",
     "/beton/harga-beton-cor-merah-putih-di-maniis-purwakarta/",
-    "/beton/harga-beton-cor-merah-putih-di-medan-satria-bekasi/"
+    "/beton/harga-beton-cor-merah-putih-di-medan-satria-bekasi/",
+    "/beton/harga-beton-cor-merah-putih-di-kamal-muara-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-kayumanis-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-kemiri-muka-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-kertamaya-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-paledang-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-pamoyanan-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-pancoran-mas-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-pedes-karawang/",
+    "/beton/harga-beton-cor-merah-putih-di-pekayon-bekasi/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -199,11 +208,16 @@
     "/beton/harga-beton-cor-merah-putih-di-jatisampurna-bekasi/": 2,
     "/beton/harga-beton-cor-merah-putih-di-jembatan-lima-jakarta/": 2,
     "/beton/harga-beton-cor-merah-putih-di-kab-garut/": 2,
-    "/beton/harga-beton-cor-merah-putih-di-kab-tasikmalaya/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-kalimulya-depok/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-kab-tasikmalaya/": 2,
+    "/beton/harga-beton-cor-merah-putih-di-kalimulya-depok/": 2,
     "/beton/harga-beton-cor-merah-putih-di-kamal-muara-jakarta/": 1,
     "/beton/harga-beton-cor-merah-putih-di-kayumanis-bogor/": 1,
     "/beton/harga-beton-cor-merah-putih-di-kemiri-muka-depok/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-kertamaya-bogor/": 1
+    "/beton/harga-beton-cor-merah-putih-di-kertamaya-bogor/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-pabaton-bogor/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-pademangan-jakarta/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-pakisjaya-karawang/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-pasir-putih-depok/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-pesanggrahan-jakarta/": 1
   }
 }
