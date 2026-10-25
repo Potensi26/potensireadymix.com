@@ -165,7 +165,21 @@
     "/beton/harga-beton-cor-merah-putih-di-pamoyanan-bogor/",
     "/beton/harga-beton-cor-merah-putih-di-pancoran-mas-depok/",
     "/beton/harga-beton-cor-merah-putih-di-pedes-karawang/",
-    "/beton/harga-beton-cor-merah-putih-di-pekayon-bekasi/"
+    "/beton/harga-beton-cor-merah-putih-di-pekayon-bekasi/",
+    "/beton/harga-beton-cor-merah-putih-di-pakisjaya-karawang/",
+    "/beton/harga-beton-cor-merah-putih-di-pasir-putih-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-pesanggrahan-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-petojo-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-petukangan-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-pondok-bambu-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-pondok-kelapa-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-pondok-labu-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-pondok-petir-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-pulo-gebang-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-rancamaya-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-rawamangun-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-rawasari-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-rengasdengklok-karawang/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -214,10 +228,14 @@
     "/beton/harga-beton-cor-merah-putih-di-kayumanis-bogor/": 1,
     "/beton/harga-beton-cor-merah-putih-di-kemiri-muka-depok/": 1,
     "/beton/harga-beton-cor-merah-putih-di-kertamaya-bogor/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-pabaton-bogor/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-pademangan-jakarta/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-pabaton-bogor/": 2,
+    "/beton/harga-beton-cor-merah-putih-di-pademangan-jakarta/": 2,
     "/beton/harga-beton-cor-merah-putih-di-pakisjaya-karawang/": 1,
     "/beton/harga-beton-cor-merah-putih-di-pasir-putih-depok/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-pesanggrahan-jakarta/": 1
+    "/beton/harga-beton-cor-merah-putih-di-pesanggrahan-jakarta/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-pondok-jaya-depok/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-ratu-jaya-depok/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-rawalumbu-bekasi/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-rorotan-jakarta/": 1
   }
 }
