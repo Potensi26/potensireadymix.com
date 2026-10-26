@@ -179,7 +179,19 @@
     "/beton/harga-beton-cor-merah-putih-di-rancamaya-bogor/",
     "/beton/harga-beton-cor-merah-putih-di-rawamangun-jakarta/",
     "/beton/harga-beton-cor-merah-putih-di-rawasari-jakarta/",
-    "/beton/harga-beton-cor-merah-putih-di-rengasdengklok-karawang/"
+    "/beton/harga-beton-cor-merah-putih-di-rengasdengklok-karawang/",
+    "/beton/harga-beton-cor-merah-putih-di-pondok-jaya-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-rorotan-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-slipi-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-sukatani-bekasi/",
+    "/beton/harga-beton-cor-merah-putih-di-tajur-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-tanah-abang-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-tanjung-duren-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-tegalwaru-karawang/",
+    "/beton/harga-beton-cor-merah-putih-di-tirtajaya-depok/",
+    "/beton/harga-beton-cor-merah-putih-di-tomang-jakarta/",
+    "/beton/harga-beton-cor-merah-putih-di-tugu-depok/",
+    "/beton/harga-beton-cor-minimix-di-batutulis-bogor/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -234,8 +246,14 @@
     "/beton/harga-beton-cor-merah-putih-di-pasir-putih-depok/": 1,
     "/beton/harga-beton-cor-merah-putih-di-pesanggrahan-jakarta/": 1,
     "/beton/harga-beton-cor-merah-putih-di-pondok-jaya-depok/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-ratu-jaya-depok/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-rawalumbu-bekasi/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-rorotan-jakarta/": 1
+    "/beton/harga-beton-cor-merah-putih-di-ratu-jaya-depok/": 2,
+    "/beton/harga-beton-cor-merah-putih-di-rawalumbu-bekasi/": 2,
+    "/beton/harga-beton-cor-merah-putih-di-rorotan-jakarta/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-sempur-bogor/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-setiabudi-jakarta/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-sukadamai-bogor/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-tirtamulya-karawang/": 1,
+    "/beton/harga-beton-cor-minimix-di-baktijaya-depok/": 1,
+    "/beton/harga-beton-cor-minimix-di-batujaya-karawang/": 1
   }
 }
