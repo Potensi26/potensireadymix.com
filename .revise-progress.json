@@ -191,7 +191,14 @@
     "/beton/harga-beton-cor-merah-putih-di-tirtajaya-depok/",
     "/beton/harga-beton-cor-merah-putih-di-tomang-jakarta/",
     "/beton/harga-beton-cor-merah-putih-di-tugu-depok/",
-    "/beton/harga-beton-cor-minimix-di-batutulis-bogor/"
+    "/beton/harga-beton-cor-minimix-di-batutulis-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-sempur-bogor/",
+    "/beton/harga-beton-cor-merah-putih-di-setiabudi-jakarta/",
+    "/beton/harga-beton-cor-minimix-di-baktijaya-depok/",
+    "/beton/harga-beton-cor-minimix-di-bojongsari-baru-depok/",
+    "/beton/harga-beton-cor-minimix-di-bojongsari-depok/",
+    "/beton/harga-beton-cor-minimix-di-bondongan-bogor/",
+    "/beton/harga-beton-cor-minimix-di-bungursari-purwakarta/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -251,9 +258,12 @@
     "/beton/harga-beton-cor-merah-putih-di-rorotan-jakarta/": 1,
     "/beton/harga-beton-cor-merah-putih-di-sempur-bogor/": 1,
     "/beton/harga-beton-cor-merah-putih-di-setiabudi-jakarta/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-sukadamai-bogor/": 1,
-    "/beton/harga-beton-cor-merah-putih-di-tirtamulya-karawang/": 1,
+    "/beton/harga-beton-cor-merah-putih-di-sukadamai-bogor/": 2,
+    "/beton/harga-beton-cor-merah-putih-di-tirtamulya-karawang/": 2,
     "/beton/harga-beton-cor-minimix-di-baktijaya-depok/": 1,
-    "/beton/harga-beton-cor-minimix-di-batujaya-karawang/": 1
+    "/beton/harga-beton-cor-minimix-di-batujaya-karawang/": 2,
+    "/beton/harga-beton-cor-minimix-di-bojong-pondok-terong-depok/": 1,
+    "/beton/harga-beton-cor-minimix-di-bojongkerta-bogor/": 1,
+    "/beton/harga-beton-cor-minimix-di-bukit-duri-jakarta/": 1
   }
 }
