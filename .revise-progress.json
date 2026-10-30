@@ -223,7 +223,16 @@
     "/beton/harga-beton-cor-minimix-di-jatijajar-depok/",
     "/beton/harga-beton-cor-minimix-di-jembatan-lima-jakarta/",
     "/beton/harga-beton-cor-minimix-di-kab-pangandaran/",
-    "/beton/harga-beton-cor-minimix-di-kab-tasikmalaya/"
+    "/beton/harga-beton-cor-minimix-di-kab-tasikmalaya/",
+    "/beton/harga-beton-cor-minimix-di-jatimulya-depok/",
+    "/beton/harga-beton-cor-minimix-di-kab-bandung-barat/",
+    "/beton/harga-beton-cor-minimix-di-kab-ciamis/",
+    "/beton/harga-beton-cor-minimix-di-kalibaru-depok/",
+    "/beton/harga-beton-cor-minimix-di-kalibaru-jakarta/",
+    "/beton/harga-beton-cor-minimix-di-kelapa-dua-jakarta/",
+    "/beton/harga-beton-cor-minimix-di-kembangan-jakarta/",
+    "/beton/harga-beton-cor-minimix-di-kiara-pedes-purwakarta/",
+    "/beton/harga-beton-cor-minimix-di-klari-karawang/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -296,10 +305,11 @@
     "/beton/harga-beton-cor-minimix-di-ciwaringin-bogor/": 1,
     "/beton/harga-beton-cor-minimix-di-curug-bogor/": 1,
     "/beton/harga-beton-cor-minimix-di-duren-tiga-jakarta/": 1,
-    "/beton/harga-beton-cor-minimix-di-galaxi-bekasi/": 1,
-    "/beton/harga-beton-cor-minimix-di-gudang-bogor/": 1,
+    "/beton/harga-beton-cor-minimix-di-galaxi-bekasi/": 2,
+    "/beton/harga-beton-cor-minimix-di-gudang-bogor/": 2,
     "/beton/harga-beton-cor-minimix-di-jatimulya-depok/": 1,
     "/beton/harga-beton-cor-minimix-di-kab-bandung-barat/": 1,
-    "/beton/harga-beton-cor-minimix-di-kab-ciamis/": 1
+    "/beton/harga-beton-cor-minimix-di-kab-ciamis/": 1,
+    "/beton/harga-beton-cor-minimix-di-kamal-muara-jakarta/": 1
   }
 }
