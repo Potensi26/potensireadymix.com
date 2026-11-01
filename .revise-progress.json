@@ -247,7 +247,20 @@
     "/beton/harga-beton-cor-minimix-di-matraman-jakarta/",
     "/beton/harga-beton-cor-minimix-di-meruya-jakarta/",
     "/beton/harga-beton-cor-minimix-di-muarasari-bogor/",
-    "/beton/harga-beton-cor-minimix-di-pabaton-bogor/"
+    "/beton/harga-beton-cor-minimix-di-pabaton-bogor/",
+    "/beton/harga-beton-cor-minimix-di-kota-bandung/",
+    "/beton/harga-beton-cor-minimix-di-kukusan-depok/",
+    "/beton/harga-beton-cor-minimix-di-lawang-gintung-bogor/",
+    "/beton/harga-beton-cor-minimix-di-pamoyanan-bogor/",
+    "/beton/harga-beton-cor-minimix-di-pasar-minggu-jakarta/",
+    "/beton/harga-beton-cor-minimix-di-pasir-jaya-bogor/",
+    "/beton/harga-beton-cor-minimix-di-pasir-putih-depok/",
+    "/beton/harga-beton-cor-minimix-di-pegangsaan-jakarta/",
+    "/beton/harga-beton-cor-minimix-di-pejaten-jakarta/",
+    "/beton/harga-beton-cor-minimix-di-pengasinan-depok/",
+    "/beton/harga-beton-cor-minimix-di-pesanggrahan-jakarta/",
+    "/beton/harga-beton-cor-minimix-di-pondok-gede-bekasi/",
+    "/beton/harga-beton-cor-minimix-di-pondok-labu-jakarta/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -329,7 +342,12 @@
     "/beton/harga-beton-cor-minimix-di-kota-bandung/": 1,
     "/beton/harga-beton-cor-minimix-di-kukusan-depok/": 1,
     "/beton/harga-beton-cor-minimix-di-lawang-gintung-bogor/": 1,
-    "/beton/harga-beton-cor-minimix-di-lubang-buaya-jakarta/": 1,
-    "/beton/harga-beton-cor-minimix-di-maniis-purwakarta/": 1
+    "/beton/harga-beton-cor-minimix-di-lubang-buaya-jakarta/": 2,
+    "/beton/harga-beton-cor-minimix-di-maniis-purwakarta/": 2,
+    "/beton/harga-beton-cor-minimix-di-pademangan-jakarta/": 1,
+    "/beton/harga-beton-cor-minimix-di-paledang-bogor/": 1,
+    "/beton/harga-beton-cor-minimix-di-pasir-kuda-bogor/": 1,
+    "/beton/harga-beton-cor-minimix-di-petamburan-jakarta/": 1,
+    "/beton/harga-beton-cor-minimix-di-plered-purwakarta/": 1
   }
 }
