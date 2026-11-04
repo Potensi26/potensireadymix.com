@@ -390,5 +390,19 @@
     "matchedTitle": "Jasa Cor Beton Bogor: Panduan Lengkap & Estimasi Biaya 2026",
     "taggedAt": "2026-10-31T11:24:14.226Z",
     "algoVersion": 2
+  },
+  "sewa pompa beton super long boom": {
+    "reason": "similar to existing article",
+    "matchedFile": "sewa-pompa-beton-long-boom.md",
+    "matchedTitle": "Sewa Pompa Beton Long Boom: Solusi Efisien untuk Pengecoran Modern",
+    "taggedAt": "2026-11-04T13:27:57.504Z",
+    "algoVersion": 2
+  },
+  "sewa pompa beton master long boom": {
+    "reason": "similar to existing article",
+    "matchedFile": "sewa-pompa-beton-long-boom.md",
+    "matchedTitle": "Sewa Pompa Beton Long Boom: Solusi Efisien untuk Pengecoran Modern",
+    "taggedAt": "2026-11-04T13:27:57.505Z",
+    "algoVersion": 2
   }
 }
