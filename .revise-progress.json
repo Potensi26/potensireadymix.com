@@ -299,7 +299,16 @@
     "/beton/harga-beton-cor-tiga-roda-di-cakung-jakarta/",
     "/beton/harga-beton-cor-tiga-roda-di-campaka-purwakarta/",
     "/beton/harga-beton-cor-tiga-roda-di-cawang-jakarta/",
-    "/beton/harga-beton-cor-tiga-roda-di-cengkareng-jakarta/"
+    "/beton/harga-beton-cor-tiga-roda-di-cengkareng-jakarta/",
+    "/beton/harga-beton-cor-tiga-roda-di-bungursari-purwakarta/",
+    "/beton/harga-beton-cor-tiga-roda-di-cempaka-putih-jakarta/",
+    "/beton/harga-beton-cor-tiga-roda-di-cibatu-purwakarta/",
+    "/beton/harga-beton-cor-tiga-roda-di-cibitung-bekasi/",
+    "/beton/harga-beton-cor-tiga-roda-di-cibuaya-karawang/",
+    "/beton/harga-beton-cor-tiga-roda-di-cijantung-jakarta/",
+    "/beton/harga-beton-cor-tiga-roda-di-cikarang-bekasi/",
+    "/beton/harga-beton-cor-tiga-roda-di-cilangkap-depok/",
+    "/beton/harga-beton-cor-tiga-roda-di-cilodong-depok/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -391,9 +400,10 @@
     "/beton/harga-beton-cor-minimix-di-serang-baru-bekasi/": 1,
     "/beton/harga-beton-cor-minimix-di-serengseng-jakarta/": 1,
     "/beton/harga-beton-cor-minimix-di-tambun-bekasi/": 1,
-    "/beton/harga-beton-cor-tiga-roda-di-batutulis-bogor/": 1,
-    "/beton/harga-beton-cor-tiga-roda-di-bukit-duri-jakarta/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-batutulis-bogor/": 2,
+    "/beton/harga-beton-cor-tiga-roda-di-bukit-duri-jakarta/": 2,
     "/beton/harga-beton-cor-tiga-roda-di-bungursari-purwakarta/": 1,
-    "/beton/harga-beton-cor-tiga-roda-di-cempaka-putih-jakarta/": 1
+    "/beton/harga-beton-cor-tiga-roda-di-cempaka-putih-jakarta/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-cilincing-jakarta/": 1
   }
 }
