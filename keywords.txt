@@ -15,9 +15,6 @@ cara cek mutu beton readymix
 bangunan dak cor
 biaya buat dak rumah
 biaya cor bondek per meter
-biaya cor dak 4x4
-biaya cor dak 4x6
-biaya cor dak 6x10
 biaya cor dak 6x6
 biaya cor dak 6x7
 biaya cor dak beton

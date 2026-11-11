@@ -831,5 +831,47 @@
     "matchedTitle": "Biaya Borongan Dak Rumah Per Meter: Panduan Lengkap 2026",
     "taggedAt": "2026-11-10T13:56:36.357Z",
     "algoVersion": 2
+  },
+  "biaya cor bondek per meter": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-bangunan-per-meter.md",
+    "matchedTitle": "Biaya Cor Bangunan Per Meter: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-11T13:10:45.877Z",
+    "algoVersion": 2
+  },
+  "biaya cor dak ukuran 3x6": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-dak-3x6.md",
+    "matchedTitle": "Biaya Cor Dak 3x6 Meter: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-11T13:10:45.884Z",
+    "algoVersion": 2
+  },
+  "harga cor bangunan per meter": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-bangunan-per-meter.md",
+    "matchedTitle": "Biaya Cor Bangunan Per Meter: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-11T13:10:45.935Z",
+    "algoVersion": 2
+  },
+  "harga cor coran per meter": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-bangunan-per-meter.md",
+    "matchedTitle": "Biaya Cor Bangunan Per Meter: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-11T13:10:45.935Z",
+    "algoVersion": 2
+  },
+  "harga cor rumah per meter": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-bangunan-per-meter.md",
+    "matchedTitle": "Biaya Cor Bangunan Per Meter: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-11T13:10:45.936Z",
+    "algoVersion": 2
+  },
+  "tangga cor minimalis": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-buat-tangga-cor.md",
+    "matchedTitle": "Biaya Buat Tangga Cor: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-11T13:10:45.960Z",
+    "algoVersion": 2
   }
 }
