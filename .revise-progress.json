@@ -369,7 +369,15 @@
     "/beton/harga-beton-cor-tiga-roda-di-pondok-kelapa-jakarta/",
     "/beton/harga-beton-cor-tiga-roda-di-pondok-pinang-jakarta/",
     "/beton/harga-beton-cor-tiga-roda-di-pulo-gebang-jakarta/",
-    "/beton/harga-beton-cor-tiga-roda-di-rancamaya-bogor/"
+    "/beton/harga-beton-cor-tiga-roda-di-rancamaya-bogor/",
+    "/beton/harga-beton-cor-tiga-roda-di-pegangsaan-jakarta/",
+    "/beton/harga-beton-cor-tiga-roda-di-ratu-jaya-depok/",
+    "/beton/harga-beton-cor-tiga-roda-di-rawa-badak-jakarta/",
+    "/beton/harga-beton-cor-tiga-roda-di-rengasdengklok-karawang/",
+    "/beton/harga-beton-cor-tiga-roda-di-setiabudi-jakarta/",
+    "/beton/harga-beton-cor-tiga-roda-di-sukasari-bogor/",
+    "/beton/harga-beton-cor-tiga-roda-di-tanah-baru-depok/",
+    "/beton/harga-beton-cor-tiga-roda-di-tanjung-duren-jakarta/"
   ],
   "failed": {
     "/alat-berat/excavator-sumitomo/": 2,
@@ -478,10 +486,18 @@
     "/beton/harga-beton-cor-tiga-roda-di-kota-cirebon/": 2,
     "/beton/harga-beton-cor-tiga-roda-di-lenteng-agung-jakarta/": 1,
     "/beton/harga-beton-cor-tiga-roda-di-pamoyanan-bogor/": 1,
-    "/beton/harga-beton-cor-tiga-roda-di-panaragan-bogor/": 1,
-    "/beton/harga-beton-cor-tiga-roda-di-pangkalan-jati-depok/": 1,
-    "/beton/harga-beton-cor-tiga-roda-di-pebayuran-bekasi/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-panaragan-bogor/": 2,
+    "/beton/harga-beton-cor-tiga-roda-di-pangkalan-jati-depok/": 2,
+    "/beton/harga-beton-cor-tiga-roda-di-pebayuran-bekasi/": 2,
     "/beton/harga-beton-cor-tiga-roda-di-pegangsaan-jakarta/": 1,
-    "/beton/harga-beton-cor-tiga-roda-di-ranggamekar-bogor/": 1
+    "/beton/harga-beton-cor-tiga-roda-di-ranggamekar-bogor/": 2,
+    "/beton/harga-beton-cor-tiga-roda-di-sindang-barang-bogor/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-sindangrasa/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-sindangsari/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-situ-gede-bogor/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-sukaresmi-bogor/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-sukatani-bekasi/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-tamansari-jakarta/": 1,
+    "/beton/harga-beton-cor-tiga-roda-di-tambelang-bekasi/": 1
   }
 }
