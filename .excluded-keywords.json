@@ -873,5 +873,19 @@
     "matchedTitle": "Biaya Buat Tangga Cor: Estimasi, Faktor Pengaruh, dan Tips Hemat",
     "taggedAt": "2026-11-11T13:10:45.960Z",
     "algoVersion": 2
+  },
+  "biaya dak per meter persegi": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-dak-per-meter-persegi.md",
+    "matchedTitle": "Biaya Cor Dak Per Meter Persegi: Panduan Lengkap 2026",
+    "taggedAt": "2026-11-13T13:37:40.590Z",
+    "algoVersion": 2
+  },
+  "harga cor dak per meter persegi": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-dak-6x6.md",
+    "matchedTitle": "Biaya Cor Dak 6x6 Meter: Panduan Lengkap dan Estimasi Terbaru",
+    "taggedAt": "2026-11-13T13:37:40.630Z",
+    "algoVersion": 2
   }
 }

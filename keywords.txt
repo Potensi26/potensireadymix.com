@@ -18,12 +18,9 @@ biaya cor bondek per meter
 biaya cor dak beton
 biaya cor dak rumah
 biaya cor dak ukuran 3x6
-biaya cor dak ukuran 5x10
-biaya cor halaman rumah
 biaya cor rumah
 biaya cor rumah per m2
 biaya dak beton
-biaya dak beton per meter
 biaya dak beton rumah
 biaya dak beton rumah per m2
 biaya dak cor rumah
