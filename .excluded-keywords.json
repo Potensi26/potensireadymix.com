@@ -887,5 +887,68 @@
     "matchedTitle": "Biaya Cor Dak 6x6 Meter: Panduan Lengkap dan Estimasi Terbaru",
     "taggedAt": "2026-11-13T13:37:40.630Z",
     "algoVersion": 2
+  },
+  "biaya cor rumah": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-halaman-rumah.md",
+    "matchedTitle": "Biaya Cor Halaman Rumah: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-14T12:41:44.880Z",
+    "algoVersion": 2
+  },
+  "biaya cor rumah per m2": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-halaman-rumah.md",
+    "matchedTitle": "Biaya Cor Halaman Rumah: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-14T12:41:44.880Z",
+    "algoVersion": 2
+  },
+  "biaya dak cor ukuran 6x8": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-dak-ukuran-5x10.md",
+    "matchedTitle": "Biaya Cor Dak Ukuran 5x10 Meter: Rincian, Estimasi, dan Tips Menghemat",
+    "taggedAt": "2026-11-14T12:41:44.880Z",
+    "algoVersion": 2
+  },
+  "biaya dak cor ukuran 7x10": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-dak-ukuran-5x10.md",
+    "matchedTitle": "Biaya Cor Dak Ukuran 5x10 Meter: Rincian, Estimasi, dan Tips Menghemat",
+    "taggedAt": "2026-11-14T12:41:44.881Z",
+    "algoVersion": 2
+  },
+  "biaya membuat dak beton per meter": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-dak-beton-per-meter.md",
+    "matchedTitle": "Biaya Dak Beton Per Meter: Panduan Lengkap Estimasi & Faktor Pengaruh di Bogor",
+    "taggedAt": "2026-11-14T12:41:44.887Z",
+    "algoVersion": 2
+  },
+  "cor halaman rumah": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-halaman-rumah.md",
+    "matchedTitle": "Biaya Cor Halaman Rumah: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-14T12:41:44.917Z",
+    "algoVersion": 2
+  },
+  "harga cor rumah": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-cor-halaman-rumah.md",
+    "matchedTitle": "Biaya Cor Halaman Rumah: Estimasi, Faktor Pengaruh, dan Tips Hemat",
+    "taggedAt": "2026-11-14T12:41:44.925Z",
+    "algoVersion": 2
+  },
+  "harga dak beton per meter": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-dak-beton-per-meter.md",
+    "matchedTitle": "Biaya Dak Beton Per Meter: Panduan Lengkap Estimasi & Faktor Pengaruh di Bogor",
+    "taggedAt": "2026-11-14T12:41:44.926Z",
+    "algoVersion": 2
+  },
+  "harga per meter dak beton": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-dak-beton-per-meter.md",
+    "matchedTitle": "Biaya Dak Beton Per Meter: Panduan Lengkap Estimasi & Faktor Pengaruh di Bogor",
+    "taggedAt": "2026-11-14T12:41:44.931Z",
+    "algoVersion": 2
   }
 }
