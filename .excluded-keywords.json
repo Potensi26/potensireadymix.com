@@ -1020,5 +1020,33 @@
     "matchedTitle": "Biaya Ngedak Bondek Per Meter: Estimasi & Faktor Penentu 2026",
     "taggedAt": "2026-11-17T15:08:08.046Z",
     "algoVersion": 2
+  },
+  "kontraktor bangun apartemen kramat jati": {
+    "reason": "similar to existing article",
+    "matchedFile": "jasa-bangun-rumah-kramat-jati.md",
+    "matchedTitle": "Jasa Bangun Rumah Kramat Jati: Panduan Lengkap & Estimasi Biaya 2026",
+    "taggedAt": "2026-11-19T14:54:08.051Z",
+    "algoVersion": 2
+  },
+  "biaya ngedak rumah ukuran 6x10": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-ngedak-rumah-ukuran-4x6.md",
+    "matchedTitle": "Biaya Ngedak Rumah Ukuran 4x6: Estimasi 2026 & Tips Terbaik",
+    "taggedAt": "2026-11-19T14:54:12.757Z",
+    "algoVersion": 2
+  },
+  "biaya ngedak rumah ukuran 6x6": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-ngedak-rumah-ukuran-4x6.md",
+    "matchedTitle": "Biaya Ngedak Rumah Ukuran 4x6: Estimasi 2026 & Tips Terbaik",
+    "taggedAt": "2026-11-19T14:54:12.757Z",
+    "algoVersion": 2
+  },
+  "harga ngedak per m2": {
+    "reason": "similar to existing article",
+    "matchedFile": "biaya-ngedak-per-m2.md",
+    "matchedTitle": "Biaya Ngedak Per M2: Panduan Lengkap Estimasi & Kontrol Biaya Tahun 2026",
+    "taggedAt": "2026-11-19T14:54:12.798Z",
+    "algoVersion": 2
   }
 }
